@@ -7,6 +7,7 @@ interface INFTFlags {
 
 contract Challenge3 {
     address public nftContract;
+
     constructor(address _nftContract) {
         nftContract = _nftContract;
     }
@@ -23,5 +24,4 @@ contract Challenge3 {
 
         INFTFlags(nftContract).mint(tx.origin, 3);
     }
-
 }

@@ -19,7 +19,7 @@ contract SolveChallenge2 is Script {
         vm.startBroadcast();
         setUp();
 
-        Solution2 solution2 = new Solution2(address(challenge2), address(nft));
+        new Solution2(address(challenge2), address(nft));
 
         require(nft.ownerOf(2) == msg.sender, "Didn't get NFT");
 

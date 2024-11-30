@@ -7,6 +7,7 @@ interface INFTFlags {
 
 contract Challenge2 {
     address public nftContract;
+
     constructor(address _nftContract) {
         nftContract = _nftContract;
     }
